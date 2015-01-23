@@ -24,7 +24,7 @@ public class MyLite extends SQLiteOpenHelper
     public static final String TABLE_CONFIG = "Config";
 
     // Creation SQL
-    private static final String DATABASE_CREATE_CONTACTOS = "CREATE TABLE [Contactos] ( [ID] INTEGER  NOT NULL PRIMARY KEY AUTOINCREMENT,     [Phone] VARCHAR(16)  NOT NULL, [Message] VARCHAR(200)  NOT NULL, [Frequency] INTEGER DEFAULT '0' NOT NULL )";
+    private static final String DATABASE_CREATE_CONTACTOS = "CREATE TABLE [Contactos] ( [ID] INTEGER  NOT NULL PRIMARY KEY AUTOINCREMENT,  [Nombre] VARCHAR(200)  NULL,   [Phone] VARCHAR(16)  NOT NULL, [Message] VARCHAR(200)  NOT NULL, [Frequency] INTEGER DEFAULT '0' NOT NULL )";
     private static final String DATABASE_CREATE_CONFIG = "CREATE TABLE [Config] ( [Pass] VARCHAR(100)  NOT NULL, [KeysCode] INTEGER  NOT NULL )";
 
     // Constructor here

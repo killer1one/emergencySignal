@@ -29,6 +29,7 @@ public class Source_Contactos
     public long saveRecord(DATA_Contactos myDC)
     {
         ContentValues values = new ContentValues();
+        values.put("Nombre",myDC.Nombre);
         values.put("Phone",myDC.Phone);
         values.put("Message",myDC.Message);
         values.put("Frequency",myDC.Frequency);
